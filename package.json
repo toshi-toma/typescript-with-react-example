@@ -1,0 +1,19 @@
+{
+  "name": "typescript-with-react-example",
+  "version": "1.0.0",
+  "repository": "https://github.com/toshi-toma/typescript-with-react-example.git",
+  "author": "toshi-toma <10shi10ma@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "webpack --mode production"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
