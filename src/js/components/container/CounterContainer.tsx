@@ -1,17 +1,22 @@
-import React, { Component } from "react";
+import * as React from 'react';
 import Button from "../presentational/Button";
 
-class CounterContainer extends Component {
-  constructor() {
-    super();
-    this.state = {
-      count: 0
-    }
-    this.countUp = this.countUp.bind(this)
-  }
-  countUp() {
+interface Props {}
+
+interface State {
+  count: number;
+}
+
+export default class CounterContainer extends React.Component<Props, State> {
+  
+  public state: State = {
+    count: 0
+  };
+
+  public countUp = () => {
     this.setState({count: this.state.count + 1})
   }
+
   render() {
     return (
       <div>
@@ -21,4 +26,3 @@ class CounterContainer extends Component {
     )
   }
 }
-export default CounterContainer;
